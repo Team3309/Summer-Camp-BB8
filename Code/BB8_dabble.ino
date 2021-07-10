@@ -21,7 +21,7 @@
 
 void setup() {
   // Start bluetooth. This is where the ESP32's bluetooth name is declared
-  Dabble.begin("BB8_11");
+  Dabble.begin("BB8_xx");
 
   // Define pin functions
   pinMode(ENA, OUTPUT);

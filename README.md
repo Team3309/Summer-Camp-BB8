@@ -21,7 +21,8 @@ It replaces the stock Arduino Uno with an ESP32 DevKit and includes a reed switc
 | 2-4 | .25in 4-40 Machine screws |
 | 1 | Can of white spray paint |
 | 1-2 fl oz | White acrylic paint |
-| | Assorted sharpies
+| | Assorted sharpies |
+| 1 | Roll of clear gift wrap tape |
 | ≥5 | Small zipties |
 | ~1in<sup>2<sup> | Low friction PTFE tape |
 | A few | Male-male wires |
@@ -56,6 +57,7 @@ It replaces the stock Arduino Uno with an ESP32 DevKit and includes a reed switc
 
 2. Solder a pair of wires (any color, preferably red) to the leads
     - They should be about 4 inches long, better to make it long and cut later
+
 3. Insert the reed switch into the slot on the top of the neck/mast. **Be careful not to bend the leads**, lest you risk breaking the fragile reeds inside
 
 ## Step 3: Wiring and cable management
@@ -65,7 +67,9 @@ It replaces the stock Arduino Uno with an ESP32 DevKit and includes a reed switc
     - The GND pin of the LDO needs to be connected directly to the GND pin on the ESP32 board
         - If negative from the battery, GND on the LDO, and GND on the ESP32 are connected with separate wires to the GND terminal of the motor controller, then electrical noise causes the ESP32 to intermittently shut off, which is bad (duh)
         - To solve that issue, strip the opposite end of the wire that is connected to the ESP32's ground pin and (gently) shove that end into the connector on the LDO's ground pin, then put that connector back on the LDO pin
+
 2. Use a ziptie to secure the ESP32 board to the chassis ***TODO: example photo***
+
 3. Do your best to round up all the cables so that none touch the wheels or shell of the robot
 
 ![Wiring Diagram](/wiring_diagram.png)
@@ -84,7 +88,10 @@ It replaces the stock Arduino Uno with an ESP32 DevKit and includes a reed switc
 
 5. Apply hot glue to those magnets, then **quickly**, before the glue cools, place the head as straight as possible, facing forward
 
-2. After the glue has fully cooled, place small squares of PTFE tape on each exposed magnet
+6. Once the magnets on the head are securely in place, glue another one in between the two in the front of the head
+    - This is to trigger the reed switch when the head is in place
+
+7. After the glue has fully cooled, place small squares of PTFE tape on each exposed magnet
 
 ## Step 5: Flash ESP32 board
 
