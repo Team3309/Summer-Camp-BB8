@@ -1,4 +1,6 @@
-# Step 1: Setting up Arduino IDE
+# Flashing instructions
+
+## Step 1: Setting up Arduino IDE
 
 1. Download and install the [Arduino IDE](https://www.arduino.cc/en/software)
 
@@ -12,7 +14,7 @@
 5. Download [this](https://github.com/ERROPiX/ESP32_AnalogWrite/archive/refs/heads/master.zip) library, then go to **Sketch > Include Library > Add .ZIP Library...** and navigate to and select the the .zip archive that just downloaded
 
 
-# Step 2: Flashing the board
+## Step 2: Flashing the board
 
 1. Download and open (**File > Open**) ["BB8_dabble.ino"](https://github.com/Team3309/Summer-Camp-BB8/blob/main/Code/BB8_dabble.ino)
     - Optionally, find `Dabble.begin("BB8_xx");` and change the contents of the `""` to be whatever you want the robot to appear as on the pairing screen
@@ -31,7 +33,7 @@
 7. If it compiled with no problems, then flash the code onto the ESP32 by clicking the "upload" (arrow) button directly next to the checkmark
 
 
-# Step 3: It's alive!
+## Step 3: It's alive!
 
 1. Unplug the USB cable, then power on the robot by replacing the batteries and putting the head in place on the neck
 
